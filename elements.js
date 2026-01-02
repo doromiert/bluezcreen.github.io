@@ -27,19 +27,19 @@ class Navbar extends HTMLElement {
     this.classList.add("navb")
 
     this.innerHTML = `
-      <div class="dr1">
-        <button class="drb1">⟡</button>
-        <div class="drc1">
-          <a href="/references/"><i class="fa-solid fa-computer"></i> About This Site</a><br>
+      <div class="dr">
+        <button class="drb">⟡</button>
+        <div class="drc">
+          <a href="/references/"><i class="fa-solid fa-computer"></i> about this site</a><br>
           <hr>
-          <a href="/home/"><i class="fa-solid fa-house"></i> Homepage</a><br>
-          <a href="/me/"><i class="fa-solid fa-user"></i> Biography</a><br>
-          <a href="/stuff/"><i class="fa-solid fa-inbox"></i> Box of Many Things</a><br>
-          <a href="/tunes/"><i class="fa-solid fa-music"></i> Gramaphone</a><br>
-          <a href="https://www.nytimes.com/games/wordle/index.html"><i class="fa-solid fa-table-cells"></i> Wordle</a>
+          <a href="/home/"><i class="fa-solid fa-house"></i> homepage</a><br>
+          <a href="/me/"><i class="fa-solid fa-user"></i> biography</a><br>
+          <a href="/stuff/"><i class="fa-solid fa-inbox"></i> box of many things</a><br>
+          <a href="/tunes/"><i class="fa-solid fa-music"></i> gramaphone</a><br>
+          <a href="https://www.nytimes.com/games/wordle/index.html"><i class="fa-solid fa-table-cells"></i> wordle</a>
           <hr>
             
-          <span style="opacity: 0.5;"><i class="fa-solid fa-palette"></i> Themes (soon!)</span>
+          <a><i class="fa-solid fa-palette"></i> themes (soon!)</a>
         </div>
       </div>
     

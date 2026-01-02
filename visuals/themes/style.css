@@ -1,9 +1,10 @@
 /*variables*/
 
 :root {
-  --prim: #212121;
-  --seco: #FFFAFA;
-  --tert: #A7A7A7;
+  --prim: #111111;
+  --seco: #222222;
+  --tert: #000000;
+  --quar: #FFFAFA;
   
   --seco2: #222222;
   --seco3: #333333;
@@ -15,6 +16,7 @@
   
   --font1: "Chicago";
   --font2: "Monaco";
+  --text: #A9A9A9;
 }
 
 /*desktop*/
@@ -57,7 +59,7 @@
 /*core elements*/
 body {
   font-family: var(--font2);
-  background-color: var(--seco);
+  background-color: var(--tert);
   background-image: radial-gradient(var(--prim) 1px, transparent 0);
   background-size: 5px 5px;
   
@@ -66,7 +68,7 @@ body {
 }
 
 a {
-  color: var(--prim);
+  color: var(--quar);
   font-size: 0.9rem;
 }
 
@@ -88,9 +90,9 @@ p-anel {
 }
 
 .window {
-  outline: 2px solid var(--prim);
+  outline: 2px solid var(--seco);
   background-color: var(--seco);
-  color: var(--prim);
+  color: var(--text);
   filter: drop-shadow(8px 8px 0px var(--prim));
   border-radius: 2px;
   
@@ -100,7 +102,7 @@ p-anel {
 .wbar {
   font-family: var(--font1);
   background-color: var(--prim);
-  color: var(--seco);
+  color: var(--quar);
   padding: 12px;
   font-size: 1.1rem;
   text-align: center;
@@ -112,10 +114,10 @@ p-anel {
 .sbar {
   font-family: var(--font1);
   background-color: var(--seco);
-  outline: 2px solid var(--prim);
+  outline: 2px solid var(--tert);
   filter: drop-shadow(8px 8px 0px var(--prim));
   border-radius: 2px;
-  color: var(--prim);
+  color: var(--text);
   
   padding: 12px;
   font-size: 1.1rem;
@@ -145,6 +147,7 @@ p-anel {
 }
 
 .scrollbox {
+  color: var(--quar);
   display: block;
   height: 150px;
   overflow-y: scroll;
@@ -184,7 +187,8 @@ p-anel {
 
 .footer {
   font-family: var(--font1);
-  background-color: var(--seco);
+  background-color: var(--tert);
+  color: var(--text);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -206,13 +210,13 @@ p-anel {
   box-sizing: border-box;
 
   background-color: var(--prim);
-  color: var(--seco);
+  color: var(--quar);
   border-bottom: 2px solid var(--seco);
   font-family: var(--font1);
 }
 
 .navb a {
-  color: var(--seco) !important;
+  color: var(--quar) !important;
   text-decoration: none;
 }
 
@@ -259,7 +263,7 @@ n-avbar {
   background-position: center;
   background-repeat: no-repeat;
 
-  border-bottom: 2px solid var(--prim);
+  border-bottom: 2px solid var(--seco);
 }
 
 #clock {
@@ -267,22 +271,22 @@ n-avbar {
   font-size: 1rem;
 }
 
-.dr1 {
+.dr {
   position: relative;
   display: inline-block;
 }
 
-.drb1 {
+.drb {
   width: 40px;
   font-family: var(--font1);
   padding: 0;
   font-size: 25px;
   background-color: var(--prim);
-  color: var(--seco);
+  color: var(--quar);
   border: none;
 }
 
-.drc1 {
+.drc {
   display: none;
   position: absolute;
   background-color: var(--prim);
@@ -297,45 +301,7 @@ n-avbar {
   padding: 15px;
 }
 
-.dr1:hover .drc1 {display: block;}
-
-.dr2 {
-  position: relative;
-  display: inline-block;
-}
-
-.drb2 {
-  padding: 0;
-  font-size: 15px;
-  background-color: var(--prim);
-  color: var(--seco);
-  border: none;
-  font-family: "Chicago";
-}
-
-.drc2 {
-  display: none;
-  position: absolute;
-  background-color: var(--prim);
-  color: var(--seco);
-  min-width: 160px;
-  font-size: 1rem;
-  
-  outline: 2px solid var(--seco);
-  
-  z-index: 5;
-  padding: 15px;
-}
-
-.drc2 button {
-  border: none;
-  font-size: 1rem;
-  font-family: "Chicago";
-  color: var(--seco);
-  background-color: var(--prim);
-}
-
-.dr2:hover .drc2 {display: block;}
+.dr:hover .drc {display: block;}
 
 /*quick stuff*/
 
@@ -351,9 +317,10 @@ n-avbar {
 }
 
 strong {
+  color: var(--quar);
   font-size: 1rem;
   font-family: "Chicago";
-  font-weight: bold;
+  font-weight: none;
 }
 
 .center {
